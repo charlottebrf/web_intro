@@ -1,7 +1,7 @@
 require 'sinatra'
 
 get '/cat' do
-  erb :cat
+  erb :index
 end
 
 get '/' do
