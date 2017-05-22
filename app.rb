@@ -1,7 +1,7 @@
 require 'sinatra'
 
 get '/cat' do
-  File.read(File.join('public', 'cat.jpg'))
+  erb :cat
 end
 
 get '/' do
@@ -11,5 +11,4 @@ end
 
 get '/secret' do
   "This is our secret message!"
-
 end
