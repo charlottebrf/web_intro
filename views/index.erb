@@ -1,7 +1,7 @@
 <% if @cat_name %>
 <h1>My name is <%= @cat_name %> </h1>
 <% end %>
-<form method="GET" action="/named-cat">
+<form method="POST" action="/named-cat">
 catname: <input type="text" name="name">
 <input type="submit">
 </form>
