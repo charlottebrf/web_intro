@@ -5,7 +5,11 @@
 </head>
 
 <body>
+  <% if @name %>
+  <h1>"Hi there, <%= @name %>!"</h1>
+  <% elsif @names %>
   <h1>"Hi there, <%= @names %>!"</h1>
+  <% end %>
     <img class="bordered" src="https://vignette3.wikia.nocookie.net/shrek/images/3/39/Puss-in-boots.png/revision/latest?cb=20110317184950">
 </body>
 </html>

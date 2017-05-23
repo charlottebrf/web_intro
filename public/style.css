@@ -1,3 +1,7 @@
 .bordered {
    border: 3px dashed red;
   }
+
+.body {
+  color:red;
+}
