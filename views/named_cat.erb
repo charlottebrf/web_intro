@@ -1,0 +1,18 @@
+<html>
+<head>
+  <title>Puss....In Boots</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <% if @name %>
+  <h1>"Hi there, <%= @name %>!"</h1>
+  <% end %>
+  <form form method="POST" action="/named_cat">
+    Name:<br>
+    <input type="text" name="name" value="Your name here"><br>
+    <input type="submit" value="submit">
+  </form>
+    <img class="bordered" src="https://vignette3.wikia.nocookie.net/shrek/images/3/39/Puss-in-boots.png/revision/latest?cb=20110317184950">
+</body>
+</html>
