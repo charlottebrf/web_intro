@@ -1,28 +1,27 @@
 require 'sinatra'
-require 'shotgun'
+
+get '/random_cat' do
+  @names = ["Alex", "Lubos", "Charlotte"].sample
+  erb :random_cat
+end
 
 get '/' do
-  "Hello"
+  "Hello Makers People"
+  "Today is Monday"
 end
 
 get '/secret' do
-  'pizza'
+  "This is our secret message!"
 end
 
-get '/dog' do
-  'german'
+get '/named_cat' do
+  p params
+  @name = params[:name]
+  erb :named_cat
 end
 
-get '/random-cat' do
-  @cat_name = ["Amigo", "Oscar", "Viking"].sample
-  erb(:index)
-end
-
-get '/cat' do
-  erb(:index)
-end
-
-post '/named-cat' do
-  @cat_name = params[:name]
-  erb(:index)
+post '/named_cat' do
+  p params
+  @name = params[:name]
+  erb :named_cat
 end
